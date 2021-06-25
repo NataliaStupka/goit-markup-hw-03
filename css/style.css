@@ -7,11 +7,39 @@
   --background-footer-hero: #2f303a;
 }
 
+/* --- Сброс --- */
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+/* --- END Сброс --- */
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* возможно, поменять цвет текста */
@@ -22,6 +50,8 @@ body {
 
 /* Logo */
 .logo {
+  margin-right: 93px;
+
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.19;
@@ -33,9 +63,34 @@ body {
   color: var(--accent-color);
 }
 
-/* ========== HEDER ========== */
+/* ========== HEADER ========== */
 
-.menu-item {
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* навигация сайта */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-link {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -44,13 +99,24 @@ body {
   color: var(--title-text-color);
 }
 
-.menu-item.current {
+.menu-link.current {
   color: var(--accent-color);
 }
 
-.menu-item:hover,
-.menu-item:focus {
+.menu-link:hover,
+.menu-link:focus {
   color: var(--accent-color);
+}
+
+/* контакты */
+.contact {
+  display: flex;
+  align-items: center;
+  /* margin-left: auto; - как вариант, если убрать justify-content: space-between */
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contact-mail,
