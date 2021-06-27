@@ -52,11 +52,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--white-color);
 
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-
-  /*???? width: 1600px;
+  /* ???
   margin-left: auto;
   margin-right: auto; */
 }
@@ -221,10 +217,10 @@ body {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -341,8 +337,12 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-name {
+.team-badge {
   padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-name {
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -354,8 +354,6 @@ body {
 }
 
 .team-profession {
-  padding-bottom: 30px;
-
   color: var(--primery-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -384,7 +382,10 @@ body {
 }
 .footer-contact {
   margin-top: 20px;
-  /* ???? margin-bottom: 60px; */
+}
+
+.footer-item {
+  margin-bottom: 9px;
 }
 
 .footer-address {
@@ -395,10 +396,13 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+
 .footer-mail {
-  display: inline-block;
-  margin-top: 9px;
   margin-bottom: 9px;
+}
+
+.footer-mail-link {
+  display: inline-block;
 
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
@@ -438,7 +442,7 @@ body {
 }
 
 .portfolio-filter {
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -462,15 +466,15 @@ body {
 }
 
 .project-card {
+  padding: 20px 24px;
+
   background: #ffffff;
   border: 1px solid #eeeeee;
 }
 
 .project-title {
-  margin-top: 20px;
   margin-bottom: 4px;
-  padding-left: 24px;
-  padding-right: 24px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -478,8 +482,6 @@ body {
   letter-spacing: 0.06em;
 }
 .project-text {
-  padding: 0 24px 20px 24px;
-
   color: var(--primery-text-color);
   font-weight: 400;
   font-size: 16px;
